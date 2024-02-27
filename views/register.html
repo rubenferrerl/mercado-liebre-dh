@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mercado Liebre</title>
+        <link rel="stylesheet" href="./css/register-styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header class="main_header">
+        <div class="main_header_top_bar">
+            <img src="./images/logo-mercado-liebre.svg" alt="logo" class="logo__mercadoliebre">
+
+            <i class="fa-regular fa-circle-question" class="help"></i>
+        </div>
+
+    </header>
+    
+    <form action="/registro" method="POST" class="create-form">
+
+        <div class="control-formulario">
+            <input type="text" name="NombreApellido" placeholder="Nombre y Apellido" id="NombreApellido" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <input type="text" name="usuario" placeholder="Nombre de usuario" id="usuario" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <input type="email" name="email" id="email" placeholder="E-mail" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <input type="password" name="password" id="password" placeholder="Contraseña" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <input type="password" name="repassword" id="repassword" placeholder="Confirmar contraseña" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <label for="nacimiento" class="titulo">Fecha de nacimiento</label>
+            <input type="date" name="nacimiento"  class="control" id="nacimiento">
+        </div>
+
+        <div class="control-formulario">
+            <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" class="control">
+        </div>
+
+        <div class="control-formulario">
+            <label for="avatar" class="titulo">Foto de perfil</label>
+            <input type="file" name="avatar" id="avatar" accept=".jpg, .png" multiple class="control">
+        </div>
+
+        <div class="perfil-option">
+
+            <label for="perfil" class="titulo">Perfil del usario</label>
+
+        <div class="perfil">
+            <input type="radio" name="perfil" id="perfil">
+            <label>Comprador</label>
+            <input type="radio" name="perfil" id="perfil">
+            <label>Vendedor</label>
+            </div>
+        </div>
+
+        <div class="perfil-option">
+
+            <label class="titulo" for="intereses">Intereses</label>
+
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="intereses" id="intereses">
+                Electro
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" id="intereses">
+                Moda
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" id="intereses">
+                Hogar
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" id="intereses">
+                Jugueteria
+            </label>
+            <label>
+                <input type="checkbox" name="intereses" id="intereses">
+                Vida sana
+            </label>
+        </div>
+        </div>
+
+        
+
+        <div class="botones">
+            <button type="reset" class="boton-formulario">Borrar</button>
+
+            <button type="submit" class="boton-formulario">Enviar</button>
+        </div>
+
+        <a href="/login.html" class="no-cuenta">¿Ya tienes una cuenta? Inicia sesion!</a>
+    </form>
+</body>
+</html>
